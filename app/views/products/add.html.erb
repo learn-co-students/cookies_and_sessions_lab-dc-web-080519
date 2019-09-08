@@ -1,0 +1,10 @@
+<h2>Add a Product</h2>
+
+<div>
+<%= form_for @product do |f| %>
+  <%= f.label :product %>
+  <%= f.text_field :product %>
+
+  <%= f.submit %>
+<% end %>
+</div>
