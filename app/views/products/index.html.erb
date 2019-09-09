@@ -1,0 +1,19 @@
+<h1>Cart</h1>
+
+#text box for user to enter name of product
+#submit button to add product to cart
+
+<%= form_tag products_path do %>
+  <label>Product: </label>
+
+  <%= text_field_tag :product %>
+  <%= submit_tag "add to cart" %>
+<% end %>
+
+#display of all cart products
+
+<ul>
+  <% cart.each do |prod| %>
+  <li><%= prod %></li>
+  <% end %>
+</ul>
